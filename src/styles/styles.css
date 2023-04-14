@@ -1,0 +1,31 @@
+.background {
+    background-image: url('../assets/illustrations/Best.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.pattern { 
+    background-image: repeating-linear-gradient(
+        45deg,
+        #333,
+        #333 10px,
+        #555 10px,
+        #555 20px
+    );
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+}
+
+.gatsby-announcer {
+    display: none;
+    width: 0px;
+    height: 0px;
+}
