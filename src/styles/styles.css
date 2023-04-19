@@ -1,31 +1,92 @@
 .background {
-    background-image: url('../assets/illustrations/Best.jpg');
+    position: relative;
+    /* background-image: url('../assets/illustrations/ShenheWallpaper.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     object-fit: cover;
     height: 100vh;
     overflow-x: hidden;
+    z-index: -1;
 }
 
-.pattern { 
-    background-image: repeating-linear-gradient(
-        45deg,
-        #333,
-        #333 10px,
-        #555 10px,
-        #555 20px
-    );
+/* Testing Features Here */
+
+/* For Nav Bar */
+li{
+    display: inline;
+    position: relative;
+    right: -900px;
+    bottom: -105px
 }
 
+img {
+    float: right;
+    height:100%;
+    width:40%;
+}
+
+h1 {
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(255, 255, 255);
+    position: relative;
+    right:-10px;
+}
+
+h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* End of Testing Features  */
 body {
     margin: 0;
     padding: 0;
-    background: var(--background-color);
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    overflow: hidden;
+}
+.block{
+    position: relative;
+    margin: 10% auto 0;
+    width: 900px;
+    height: 450px;
+    top:-40px;
+    background: linear-gradient(0deg,black,rgb(44,43,43))
 }
 
-.gatsby-announcer {
-    display: none;
-    width: 0px;
-    height: 0px;
+.glow::before , .glow::after{
+    content: '';
+    position: absolute;
+    left:-2px;
+    top: -2px;
+    bottom:-2px;
+    right: -2px;
+    background: linear-gradient(45deg,#e6fb04,#ff6600,#00ff66,#00ffff,#ff00ff,
+    #ff0099,#6e0dd0,#ff3300,#099fff);
+    background-size: 400%;
+    width: calc(100%+5px);
+    height: calc(100%+5px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.glow::after{
+    filter: blur(40px);
+    opacity: 0.99;
 }

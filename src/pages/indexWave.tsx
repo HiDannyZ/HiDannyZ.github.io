@@ -1,6 +1,6 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
-import '../styles/styles2.css'
+import '../styles/styles.css'
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
