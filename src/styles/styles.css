@@ -13,11 +13,19 @@
 /* Testing Features Here */
 
 /* For Nav Bar */
-li{
-    display: inline;
+.navBar {
     position: relative;
-    right: -900px;
-    bottom: -105px
+    left: 58%;
+    top:12%;
+}
+
+li{
+    position:relative;
+    display: inline;
+    float: left;
+    margin-right: 3px;
+    text-align: right;
+    z-index:0; /*Add this*/
 }
 
 img {
