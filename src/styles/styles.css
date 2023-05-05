@@ -1,13 +1,9 @@
-.background {
-    position: relative;
-    /* background-image: url('../assets/illustrations/ShenheWallpaper.jpg'); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+body{
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
     object-fit: cover;
     height: 100vh;
-    overflow-x: hidden;
     z-index: -1;
+    overflow: hidden;
 }
 
 /* Testing Features Here */
@@ -15,17 +11,22 @@
 /* For Nav Bar */
 .navBar {
     position: relative;
-    left: 58%;
-    top:12%;
+    z-index: 1;
+    left:61%;
+    bottom:65px;
 }
 
 li{
     position:relative;
     display: inline;
     float: left;
-    margin-right: 3px;
+    margin-right: 4px;
     text-align: right;
-    z-index:0; /*Add this*/
+}
+
+li a{
+    color: #00ff66;
+    z-index:10;
 }
 
 img {
@@ -40,6 +41,7 @@ h1 {
     color: rgb(255, 255, 255);
     position: relative;
     right:-10px;
+    text-decoration:bold; 
 }
 
 h4 {
@@ -48,15 +50,14 @@ h4 {
     text-align: center;
 }
 
-/* End of Testing Features  */
-body {
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
-    overflow: hidden;
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
+
+/* End of Testing Features  */
+
 .block{
     position: relative;
     margin: 10% auto 0;

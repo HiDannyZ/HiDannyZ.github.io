@@ -20,6 +20,15 @@
     transform: rotate(-45deg);
     color: white;
 }
+.starsLeftSide {
+    position: fixed;
+    top: -100vh;
+    right: -40vw;
+    width: 150%;
+    height: 120%;
+    transform: rotate(-45deg);
+    color: white;
+}
 
 .star {
     $star-count: 50;
