@@ -13,7 +13,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <li><a href="#About">About</a></li>
         <li><a href="https://github.com/HiDannyZ">Github</a></li>
         <li><a href="https://www.linkedin.com/in/hidannyzhu/">Linkedln</a></li>
-        <li><a href="#Experimentals">Experimental</a></li>
+        <li><a href="#Experimental">Experimental</a></li>
       </div>
       <div className="leftStars">
         <div className="star"></div>
