@@ -9,16 +9,30 @@ body{
 /* Testing Features Here */
 
 /* For Nav Bar */
-.navBar {
-    position: relative;
-    z-index: 1;
-    left:61%;
-    bottom:65px;
+@media screen and (max-width:1920px) {
+    .navBar {
+        position: relative;
+        z-index: 1;
+        left:63%;
+        bottom:65px;
+        display: block;
+    }
 }
+
+@media screen and (min-width:1920px) {
+    .navBar {
+        position: relative;
+        z-index: 1;
+        left:58%;
+        bottom:65px;
+        display: block;
+    }
+}
+
 
 li{
     position:relative;
-    display: inline;
+    display: block;
     float: left;
     margin-right: 4px;
     text-align: right;
@@ -54,6 +68,13 @@ p {
     font-family: 'Source Sans Pro', sans-serif;
     color: rgb(255, 255, 255);
     text-align: center;
+}
+
+.jpmIcon {
+    content: url('../assets/icons/chaseIcon.png');
+    height: 20px;
+    width: 20px;
+    display: inline-block;
 }
 
 /* End of Testing Features  */

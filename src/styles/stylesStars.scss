@@ -11,19 +11,20 @@
     @return $random_range;
 }
 
-.stars {
+.leftStars {
     position: fixed;
     top: -100vh;
-    right: -100vw;
+    right: -40vw;
     width: 150%;
     height: 120%;
     transform: rotate(-45deg);
     color: white;
 }
-.starsLeftSide {
+
+.rightStars {
     position: fixed;
     top: -100vh;
-    right: -40vw;
+    right: -100vw;
     width: 150%;
     height: 120%;
     transform: rotate(-45deg);
