@@ -198,7 +198,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <div className="block glow">            
         <img src={image} />
         <h1>About</h1>
-        <p> Hey, I am Danny Zhu, a Senior software engineer currently based in NYC <FontAwesomeIcon icon={faCity}/> and work at JPM <span className="jpmIcon"></span> as a Software Engineer 2 </p>
+        <p> Hey, I am Danny Zhu, a software engineer currently based in NYC <FontAwesomeIcon icon={faCity}/> and work at JPM <span className="jpmIcon"></span> as a Senior Software Engineer 3</p>
         <p> Since high school, I've spent many years programming new ideas and interests and worked as a Software Engineer at Amazon <span className="amazonIcon"></span>.</p>
         <p> Outside of programming, you will find me enjoying new foods, traveling, music, concerts, gaming, and in general exploring new things. </p>
         <br></br>
